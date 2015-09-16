@@ -15,7 +15,7 @@
 #
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
-directories %w[app config lib spec frontend/app]
+directories %w[app config lib frontend/app]
 
 guard 'livereload' do
   watch(%r{app/views/.+\.(erb|haml|slim)$})
