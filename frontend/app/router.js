@@ -11,8 +11,9 @@ Router.map(function() {
 
     this.route('show', {
       path: ':friend_id'
-    }, function() {
-      this.route('articles', {resetNamespace: true}, function() {
+    },
+    function () {
+      this.route('articles', {resetNamespace: true}, function(){
       });
     });
 
@@ -20,7 +21,6 @@ Router.map(function() {
       path: ':friend_id/edit'
     });
   });
-  this.route('articles');
 });
 
 export default Router;
