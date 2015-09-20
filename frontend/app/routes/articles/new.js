@@ -10,9 +10,14 @@ export default Ember.Route.extend({
     save() {
       var model = this.modelFor('articles/new');
 
-      model.save().then(() => {
-        this.transitionTo('articles');
-      });
+      if (this.get('isValid')) {
+        model.save().then(() => {
+          this.transitionTo('articles');
+        });
+      } else {
+        this.set('errorMessage', 'Fill description field dumbass!');
+      }
+      return false;
     },
     cancel() {
       this.transitionTo('articles');
