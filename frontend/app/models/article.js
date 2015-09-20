@@ -5,7 +5,7 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   notes: DS.attr('string'),
   state: DS.attr('string', {
-    defaultValue: 'borrowed';
+    defaultValue: 'borrowed'
   }),
   friend: DS.belongsTo('friend')
 });
