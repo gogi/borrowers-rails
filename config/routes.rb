@@ -10,6 +10,10 @@ Rails.application.routes.draw do
       resources :friends,  except: [:new, :edit]
       resources :articles, except: [:new, :edit]
     end
+    namespace :v3 do
+      resources :friends,  except: [:new, :edit]
+      resources :articles, except: [:new, :edit]
+    end
   end
 
   get '/*path' => 'application#index'
