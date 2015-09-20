@@ -34,6 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem "ember-cli-rails"
 gem 'active_model_serializers'
+gem 'counter_culture'
 
 group :development do
   gem 'guard'
