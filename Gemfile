@@ -33,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem "ember-cli-rails"
+gem 'active_model_serializers'
 
 group :development do
   gem 'guard'
