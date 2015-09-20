@@ -14,6 +14,7 @@ Router.map(function() {
     },
     function () {
       this.route('articles', {resetNamespace: true}, function(){
+          this.route('new');
       });
     });
 
