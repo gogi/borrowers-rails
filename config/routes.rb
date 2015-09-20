@@ -3,5 +3,9 @@ Rails.application.routes.draw do
 
   root 'application#index'
 
+  namespace :api do
+    resources :friends, except: [:new, :edit]
+  end
+
   get '/*path' => 'application#index'
 end
