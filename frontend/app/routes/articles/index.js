@@ -7,7 +7,7 @@ export default Ember.Route.extend({
   resetController(controller, isExiting) {
     if (isExiting) {
       var model = controller.get('model');
-      model.rollback();
+      model.rollback;
     }
   },
   actions: {
